@@ -48,11 +48,11 @@ None of this went in a straight line. That turned out to be fine.
 The original target platform, and where all three games were first built
 and proven.
 
-| Game         | Status                                | How to run                                           |
-|--------------|---------------------------------------|------------------------------------------------------|
-| Beatle Quest | 📦 Released                           | Available now for NABU on [nabu.ca](https://nabu.ca) |
-| Blake's 7    | 🧪 Feature-complete, not yet released | Real NABU PC / CP/M, confirmed hands-on              |
-| Pyramid 2000 | 🧪 Feature-complete, not yet released | Real NABU PC / CP/M, confirmed hands-on              |
+| Game         | Status                                | How to run                                                                                                            |
+|--------------|---------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
+| Beatle Quest | 📦 Released                           | Get it from [nabu.ca](https://nabu.ca/cpm-software/262) or this repo's [Release](../../releases/tag/bq-nabu-v1.00.22) |
+| Blake's 7    | 🧪 Feature-complete, not yet released | Real NABU PC / CP/M, confirmed hands-on                                                                               |
+| Pyramid 2000 | 🧪 Feature-complete, not yet released | Real NABU PC / CP/M, confirmed hands-on                                                                               |
 
 - *Beatle Quest* — a port of the 1985 Spectrum Quill adventure by Garry
   Marsh (Number 9 Software), and the game that actually got this whole
