@@ -70,23 +70,27 @@ and proven.
 Beatle Quest didn't stop at NABU — the same game data now runs natively
 on six more machines, each a genuine native build for its target.
 
-| Platform              | Status         | Emulator tested | Hardware tested | How to run                                              |
-|-----------------------|----------------|-----------------|-----------------|---------------------------------------------------------|
-| Commodore 64          | ✅ Playable    | ✅ Yes          | ❓ Not yet      | Load `BEATLEQUEST.D64` in VICE or on real hardware      |
-| Commander X16         | 🚧 In progress | ✅ Yes          | ❌ Known issue  | Load `BQ.PRG` in x16emu                                 |
-| MSX (MSX-DOS 1)       | 🚧 In progress | ✅ Yes          | ❓ Not yet      | Boot `BQ.DSK` in openMSX or on real hardware            |
-| Apple II (ProDOS)     | 🚧 In progress | ✅ Yes          | ❓ Not yet      | Boot `BQ_APPLE2.po` in AppleWin or on real hardware     |
-| Amiga (AmigaOS)       | 🚧 In progress | ✅ Yes          | ❓ Not yet      | Run `BQ` from AmigaDOS in WinUAE or on real hardware    |
-| TRS-80 Color Computer | ✅ Playable    | ✅ Yes          | ✅ Confirmed    | Boot `BQ.DSK` in VCC/XRoar or on real hardware          |
+| Platform              | Status             | Emulator tested | Hardware tested | How to run                                           |
+|-----------------------|--------------------|-----------------|-----------------|------------------------------------------------------|
+| Commodore 64          | 📦 Pre-release RC1 | ✅ Yes          | ❓ Not yet      | Load `BEATLEQUEST.D64` in VICE or on real hardware   |
+| Commander X16         | 📦 Pre-release RC1 | ✅ Yes          | ❌ Known issue  | Load `BQ.PRG` in x16emu                              |
+| MSX (MSX-DOS 1)       | 📦 Pre-release RC1 | ✅ Yes          | ❓ Not yet      | Boot `BQ.DSK` in openMSX or on real hardware         |
+| Apple II (ProDOS)     | 📦 Pre-release RC1 | ✅ Yes          | ❓ Not yet      | Boot `BQ_APPLE2.po` in AppleWin or on real hardware  |
+| Amiga (AmigaOS)       | 📦 Pre-release RC1 | ✅ Yes          | ❓ Not yet      | Run `BQ` from AmigaDOS in WinUAE or on real hardware |
+| TRS-80 Color Computer | 📦 Pre-release RC1 | ✅ Yes          | ✅ Confirmed    | Boot `BQ.DSK` in VCC/XRoar or on real hardware       |
 
 Every platform above passes a full, automated, perfect-score playthrough
-of the game's puzzle chain. Downloads are attached to the
-[Releases](../../releases) page as they become available — not every
-platform has a packaged release yet.
+of the game's puzzle chain, and all six now have a downloadable **RC1
+pre-release** package (program, data, manual, and a disk image where one
+exists) on the [Releases](../../releases) page — the first release built
+for outside testing, not yet confirmed by anyone but us on most
+platforms. See each package's own `README.TXT`/`CHANGES.TXT` for exact
+status, and please report back what you find.
 
 ## Status key
 
 - 📦 **Released** — publicly available now
+- 📦 **Pre-release RC1** — first public build, out for external testing; not yet a stable/final release
 - ✅ **Playable** — hands-on confirmed, start to finish
 - 🧪 **Feature-complete, not yet released** — playable, awaiting a packaged release
 - 🚧 **In progress** — engine work underway, not yet fully playable
