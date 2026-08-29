@@ -70,14 +70,14 @@ and proven.
 Beatle Quest didn't stop at NABU — the same game data now runs natively
 on six more machines, each a genuine native build for its target.
 
-| Platform              | Status         | Emulator tested | How to run                                              |
-|-----------------------|----------------|-----------------|---------------------------------------------------------|
-| Commodore 64          | ✅ Playable    | ✅ Yes          | Load `BEATLEQUEST.D64` in VICE or on real hardware      |
-| Commander X16         | 🚧 In progress | ✅ Yes          | Load `BQ.PRG` in x16emu                                 |
-| MSX (MSX-DOS 1)       | 🚧 In progress | ✅ Yes          | Boot `BQ.DSK` in openMSX or on real hardware            |
-| Apple II (ProDOS)     | 🚧 In progress | ✅ Yes          | Boot `BQ_APPLE2.po` in AppleWin or on real hardware     |
-| Amiga (AmigaOS)       | 🚧 In progress | ✅ Yes          | Run `BQ` from AmigaDOS in WinUAE or on real hardware    |
-| TRS-80 Color Computer | ✅ Playable    | ✅ Yes          | Boot `BEATLEQUEST.DSK` in VCC/XRoar or on real hardware |
+| Platform              | Status         | Emulator tested | Hardware tested | How to run                                              |
+|-----------------------|----------------|-----------------|-----------------|---------------------------------------------------------|
+| Commodore 64          | ✅ Playable    | ✅ Yes          | ❓ Not yet      | Load `BEATLEQUEST.D64` in VICE or on real hardware      |
+| Commander X16         | 🚧 In progress | ✅ Yes          | ❌ Known issue  | Load `BQ.PRG` in x16emu                                 |
+| MSX (MSX-DOS 1)       | 🚧 In progress | ✅ Yes          | ❓ Not yet      | Boot `BQ.DSK` in openMSX or on real hardware            |
+| Apple II (ProDOS)     | 🚧 In progress | ✅ Yes          | ❓ Not yet      | Boot `BQ_APPLE2.po` in AppleWin or on real hardware     |
+| Amiga (AmigaOS)       | 🚧 In progress | ✅ Yes          | ❓ Not yet      | Run `BQ` from AmigaDOS in WinUAE or on real hardware    |
+| TRS-80 Color Computer | ✅ Playable    | ✅ Yes          | ✅ Confirmed    | Boot `BEATLEQUEST.DSK` in VCC/XRoar or on real hardware |
 
 Every platform above passes a full, automated, perfect-score playthrough
 of the game's puzzle chain. Downloads are attached to the
@@ -91,11 +91,14 @@ platform has a packaged release yet.
 - 🧪 **Feature-complete, not yet released** — playable, awaiting a packaged release
 - 🚧 **In progress** — engine work underway, not yet fully playable
 - ⏳ **Planned** — not started yet
+- ❓ **Not yet** — not yet tested on real hardware (works in emulator)
+- ❌ **Known issue** — confirmed failing on real hardware, not yet fixed
 
 ## Article / further reading
 
 - [Blake's 7 & Beatle Quest](https://www.amigaretro.com/projects/blakes-7-beatle-quest/)
 - [Beatle Quest on real hardware](https://www.amigaretro.com/projects/beatle-quest-real-hardware/)
+- [Six Machines, One Game](https://www.amigaretro.com/projects/six-machines-one-game/)
 
 ## Credits
 
