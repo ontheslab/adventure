@@ -77,7 +77,7 @@ on six more machines, each a genuine native build for its target.
 | MSX (MSX-DOS 1)       | 🚧 In progress | ✅ Yes          | ❓ Not yet      | Boot `BQ.DSK` in openMSX or on real hardware            |
 | Apple II (ProDOS)     | 🚧 In progress | ✅ Yes          | ❓ Not yet      | Boot `BQ_APPLE2.po` in AppleWin or on real hardware     |
 | Amiga (AmigaOS)       | 🚧 In progress | ✅ Yes          | ❓ Not yet      | Run `BQ` from AmigaDOS in WinUAE or on real hardware    |
-| TRS-80 Color Computer | ✅ Playable    | ✅ Yes          | ✅ Confirmed    | Boot `BEATLEQUEST.DSK` in VCC/XRoar or on real hardware |
+| TRS-80 Color Computer | ✅ Playable    | ✅ Yes          | ✅ Confirmed    | Boot `BQ.DSK` in VCC/XRoar or on real hardware          |
 
 Every platform above passes a full, automated, perfect-score playthrough
 of the game's puzzle chain. Downloads are attached to the
