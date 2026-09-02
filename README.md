@@ -16,7 +16,7 @@ That same approach went back into **Blake's 7** itself - not as a graphics port 
 
 A third game, **Pyramid 2000** (the 1979 TRS-80 classic), followed the same path and is out as a pre-release too.
 
-And then Beatle Quest kept going: the same core engine, re-adapted by hand for six more 8-bit and 16-bit machines, each one a native build reading the same shared game data. Pyramid 2000 followed the same route to four of those machines.
+And then Beatle Quest kept going: the same core engine, re-adapted by hand for seven more 8-bit and 16-bit machines, each one a native build reading the same shared game data. Pyramid 2000 followed the same route to five of those machines.
 
 None of this went in a straight line. That turned out to be fine.
 
@@ -29,8 +29,8 @@ The original target platform, and where all three games were first built and pro
 | Game         | Status                                | How to run                                                                                                                          |
 |--------------|----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
 | Beatle Quest | 📦 Released                           | Get it from [nabu.ca](https://nabu.ca/cpm-software/262) or this repo's [Release](../../releases/tag/bq-nabu-v1.00.22)               |
-| Blake's 7    | 🧪 Feature-complete, not yet released | Physical NABU PC / CP/M, confirmed hands-on                                                                                              |
-| Pyramid 2000 | 📦 Pre-release RC1                    | Physical NABU PC / CP/M, confirmed hands-on. Get it from this repo's [Release](../../releases/tag/pyramid2000-nabu-v1.00.13-rc1)         |
+| Blake's 7    | 🧪 Engine complete, not feature-complete | Physical NABU PC / CP/M, confirmed hands-on                                                                                              |
+| Pyramid 2000 | 📦 Pre-release RC2                    | Physical NABU PC / CP/M, confirmed hands-on. Get it from this repo's [Release](../../releases/tag/pyramid2000-nabu-v1.00.14-rc2)         |
 
 - *Beatle Quest* - a port of the 1985 Spectrum Quill adventure by Garry Marsh (Number 9 Software), and the game that actually got this whole project started - built first just so it could finally be played on the NABU.
 - *Blake's 7* - a text adaptation of Chema Enguita's 2018 Oric graphic adventure, built directly from the original game's scripts and puzzle chain, all three episodes.
@@ -42,29 +42,33 @@ The original target platform, and where all three games were first built and pro
 
 ### Beatle Quest - other platforms
 
-Beatle Quest didn't stop at NABU - the same game data now runs natively on six more machines, each a native build for its target.
+Beatle Quest didn't stop at NABU - the same game data now runs natively on seven more machines, each a native build for its target.
 
 | Platform              | Status              | Emulator tested | Hardware tested | How to run                                              |
 |------------------------|---------------------|------------------|------------------|----------------------------------------------------------|
 | Commodore 64          | 📦 Pre-release RC2  | ✅ Yes           | ❓ Not yet       | Load `BEATLEQUEST.D64` in VICE or on physical hardware   |
-| Commander X16         | 📦 Pre-release RC1  | ✅ Yes           | ❌ Known issue   | Load `BQ.PRG` in x16emu                                  |
+| Commander X16         | 📦 Pre-release RC1  | ❌ No            | ❌ Known issue   | Load `BQ.PRG` in x16emu                                  |
 | MSX (MSX-DOS 1)       | 📦 Pre-release RC2  | ✅ Yes           | ❓ Not yet       | Boot `BQ.DSK` in openMSX or on physical hardware         |
 | Apple II (ProDOS)     | 📦 Pre-release RC1  | ✅ Yes           | ❓ Not yet       | Boot `BQ_APPLE2.po` in AppleWin or on physical hardware  |
 | Amiga (AmigaOS)       | 📦 Pre-release RC2  | ✅ Yes           | ❓ Not yet       | Run `BQ` (or windowed `BQG`) from AmigaDOS in WinUAE or on physical hardware |
+| ZX Spectrum Next      | 📦 Pre-release RC2  | ✅ Yes           | ❓ Not yet       | Boot `BQ.nex` in CSpect or on physical hardware          |
 | TRS-80 Color Computer | 📦 Pre-release RC1  | ✅ Yes           | ✅ Confirmed     | Boot `BQ.DSK` in VCC/XRoar or on physical hardware       |
 
-Every platform above passes a full, automated, perfect-score playthrough of the game's puzzle chain, and each has a downloadable pre-release package (program, data, manual, and a disk image where one exists) on the [Releases](../../releases) page: the RC2 platforms (Commodore 64, MSX, Amiga) carry input, word-wrap, and default-filename fixes found after RC1; the rest are still on their first RC1 build. See each package's own `README.TXT`/`CHANGES.TXT` for exact status, and please report back what you find.
+Every platform above except Commander X16 passes a full, automated, perfect-score playthrough of the game's puzzle chain, and each has a downloadable pre-release package (program, data, manual, and a disk image where one exists) on the [Releases](../../releases) page: the RC2 platforms (Commodore 64, MSX, Amiga, ZX Spectrum Next) carry input, word-wrap, and default-filename fixes found after RC1, and ZX Spectrum Next is a brand-new platform on this round; the rest are still on their first RC1 build. See each package's own `README.TXT` for exact status, and please report back what you find.
+
+**Commander X16 is currently not working**, in the emulator or on real hardware - it was confirmed working before, but is not right now. Not recommended to try until this is sorted out.
 
 ### Pyramid 2000 - other platforms
 
-The same `PYRAMID.P2K` game data, running natively on four more machines.
+The same `PYRAMID.P2K` game data, running natively on five more machines.
 
 | Platform          | Status              | Emulator tested | Hardware tested | How to run                                                             |
 |--------------------|---------------------|------------------|------------------|--------------------------------------------------------------------------|
-| Commodore 64      | 📦 Pre-release RC1  | ✅ Yes           | ❓ Not yet       | Load `PYRAMID.D64` in VICE or on physical hardware                     |
-| Apple II (ProDOS) | 📦 Pre-release RC1  | ✅ Yes           | ❓ Not yet       | Boot `PYRAMID_APPLE2.po` in AppleWin or on physical hardware           |
-| MSX (MSX-DOS 1)   | 📦 Pre-release RC1  | ✅ Yes           | ❓ Not yet       | Boot `PYRAMID.DSK` in openMSX or on physical hardware                  |
-| Amiga (AmigaOS)   | 📦 Pre-release RC1  | ✅ Yes           | ❓ Not yet       | Run `PYRAMID` (or windowed `PYRAMIDG`) from AmigaDOS in WinUAE or on physical hardware |
+| Commodore 64      | 📦 Pre-release RC2  | ✅ Yes           | ❓ Not yet       | Load `PYRAMID.D64` in VICE or on physical hardware                     |
+| Apple II (ProDOS) | 📦 Pre-release RC2  | ✅ Yes           | ❓ Not yet       | Boot `PYRAMID_APPLE2.po` in AppleWin or on physical hardware           |
+| MSX (MSX-DOS 1)   | 📦 Pre-release RC2  | ✅ Yes           | ❓ Not yet       | Boot `PYRAMID.DSK` in openMSX or on physical hardware                  |
+| Amiga (AmigaOS)   | 📦 Pre-release RC2  | ✅ Yes           | ❓ Not yet       | Run `PYRAMID` (or windowed `PYRAMIDG`) from AmigaDOS in WinUAE or on physical hardware |
+| ZX Spectrum Next  | 📦 Pre-release RC2  | ✅ Yes           | ❓ Not yet       | Boot `PYRAMID.nex` in CSpect or on physical hardware                   |
 
 Commander X16 isn't included yet - it has a known crash-on-exit issue already open on the Beatle Quest X16 build, so a Pyramid 2000 port would likely hit the same problem. TRS-80 Color Computer isn't planned - an original 1982 CoCo release of Pyramid 2000 already exists and is this engine's own architectural reference.
 
@@ -73,7 +77,7 @@ Commander X16 isn't included yet - it has a known crash-on-exit issue already op
 - 📦 **Released** - publicly available now
 - 📦 **Pre-release RC1/RC2** - a public build out for external testing; not yet a stable/final release. RC2 supersedes RC1 for whichever platforms it was built for.
 - ✅ **Playable** - hands-on confirmed, start to finish
-- 🧪 **Feature-complete, not yet released** - playable, awaiting a packaged release
+- 🧪 **Engine complete, not feature-complete** - runs and plays start to finish, but there's still content/gameplay work left before it's ready to release
 - 🚧 **In progress** - engine work underway, not yet fully playable
 - ⏳ **Planned** - not started yet
 - ❓ **Not yet** - not yet tested on real hardware (works in emulator)
