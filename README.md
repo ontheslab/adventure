@@ -51,10 +51,10 @@ Beatle Quest didn't stop at NABU - the same game data now runs natively on seven
 | MSX (MSX-DOS 1)       | 📦 Pre-release RC2  | ✅ Yes           | ❓ Not yet       | Boot `BQ.DSK` in openMSX or on physical hardware         |
 | Apple II (ProDOS)     | 📦 Pre-release RC1  | ✅ Yes           | ❓ Not yet       | Boot `BQ_APPLE2.po` in AppleWin or on physical hardware  |
 | Amiga (AmigaOS)       | 📦 Pre-release RC2  | ✅ Yes           | ❓ Not yet       | Run `BQ` (or windowed `BQG`) from AmigaDOS in WinUAE or on physical hardware |
-| ZX Spectrum Next      | 📦 Pre-release RC2  | ✅ Yes           | ❓ Not yet       | Boot `BQ.nex` in CSpect or on physical hardware          |
-| TRS-80 Color Computer | 📦 Pre-release RC1  | ✅ Yes           | ✅ Confirmed     | Boot `BQ.DSK` in VCC/XRoar or on physical hardware       |
+| ZX Spectrum Next      | 📦 Pre-release RC3  | ✅ Yes, and confirmed on MAME by an external tester | ❓ Not yet       | Boot `BQ.nex` in CSpect or on physical hardware          |
+| TRS-80 Color Computer | 📦 Pre-release RC2  | ✅ Yes           | ✅ Confirmed, including SAVE/LOAD over real FujiNet hardware | Boot `BQ.DSK` in VCC/XRoar or on physical hardware       |
 
-Every platform above except Commander X16 passes a full, automated, perfect-score playthrough of the game's puzzle chain, and each has a downloadable pre-release package (program, data, manual, and a disk image where one exists) on the [Releases](../../releases) page: the RC2 platforms (Commodore 64, MSX, Amiga, ZX Spectrum Next) carry input, word-wrap, and default-filename fixes found after RC1, and ZX Spectrum Next is a brand-new platform on this round; the rest are still on their first RC1 build. See each package's own `README.TXT` for exact status, and please report back what you find.
+Every platform above except Commander X16 passes a full, automated, perfect-score playthrough. Each game's platforms ship together in one "Multi-Platform Ports" release on the [Releases](../../releases) page, kept up to date per platform - see each package's own `README.TXT` for exact status, and please report back what you find.
 
 **Commander X16 is currently not working**, in the emulator or on real hardware - it was confirmed working before, but is not right now. Not recommended to try until this is sorted out.
 
@@ -68,14 +68,14 @@ The same `PYRAMID.P2K` game data, running natively on five more machines.
 | Apple II (ProDOS) | 📦 Pre-release RC2  | ✅ Yes           | ❓ Not yet       | Boot `PYRAMID_APPLE2.po` in AppleWin or on physical hardware           |
 | MSX (MSX-DOS 1)   | 📦 Pre-release RC2  | ✅ Yes           | ❓ Not yet       | Boot `PYRAMID.DSK` in openMSX or on physical hardware                  |
 | Amiga (AmigaOS)   | 📦 Pre-release RC2  | ✅ Yes           | ❓ Not yet       | Run `PYRAMID` (or windowed `PYRAMIDG`) from AmigaDOS in WinUAE or on physical hardware |
-| ZX Spectrum Next  | 📦 Pre-release RC2  | ✅ Yes           | ❓ Not yet       | Boot `PYRAMID.nex` in CSpect or on physical hardware                   |
+| ZX Spectrum Next  | 📦 Pre-release RC3  | ✅ Yes, and confirmed on MAME by an external tester | ❓ Not yet       | Boot `PYRAMID.nex` in CSpect or on physical hardware                   |
 
 Commander X16 isn't included yet - it has a known crash-on-exit issue already open on the Beatle Quest X16 build, so a Pyramid 2000 port would likely hit the same problem. TRS-80 Color Computer isn't planned - an original 1982 CoCo release of Pyramid 2000 already exists and is this engine's own architectural reference.
 
 ## Status key
 
 - 📦 **Released** - publicly available now
-- 📦 **Pre-release RC1/RC2** - a public build out for external testing; not yet a stable/final release. RC2 supersedes RC1 for whichever platforms it was built for.
+- 📦 **Pre-release RC1/RC2/RC3** - a public build out for external testing; not yet a stable/final release. A higher RC number supersedes a lower one for whichever platform it was built for - each game's platforms ship together in one release, so different platforms can be on different RC numbers at the same time.
 - ✅ **Playable** - hands-on confirmed, start to finish
 - 🧪 **Engine complete, not feature-complete** - runs and plays start to finish, but there's still content/gameplay work left before it's ready to release
 - 🚧 **In progress** - engine work underway, not yet fully playable
