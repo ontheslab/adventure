@@ -72,6 +72,16 @@ The same `PYRAMID.P2K` game data, running natively on five more machines.
 
 Commander X16 isn't included yet - it has a known crash-on-exit issue already open on the Beatle Quest X16 build, so a Pyramid 2000 port would likely hit the same problem. TRS-80 Color Computer isn't planned - an original 1982 CoCo release of Pyramid 2000 already exists and is this engine's own architectural reference.
 
+### Pyramid 2000 - Spectrum 48K (special edition)
+
+A one-off, separate from the platforms above: the first program in this whole project to run on a genuine, unexpanded 48K Spectrum - no Spectrum Next, no CP/M, no SD card, no disk drive. Just the original machine, its own ROM, and a cassette tape, including tape SAVE/LOAD.
+
+| Status | Emulator tested | Hardware tested | How to run |
+|---|---|---|---|
+| 📦 Pre-release RC1 (special edition) | ✅ Yes, confirmed on both MAME and Fuse | ❓ Not yet | Load `PYRAMID.tap` in MAME, Fuse, or on physical 48K hardware |
+
+Get it from this repo's [Release](../../releases/tag/pyramid2000-spectrum48-v1.00-rc1). This is a standalone release, not part of the "Multi-Platform Ports" bundle above, and isn't in the regular platform rotation for now.
+
 ## Status key
 
 - 📦 **Released** - publicly available now
