@@ -4,6 +4,10 @@ Text adventures from the 8-bit era, preserved and ported to real hardware.
 
 This project started as one thing and turned into three. All of it is tied together by the same idea: take a classic game - not a tribute, not a reimagining, the actual original game logic - and get it running properly on hardware it was never built for.
 
+## Latest update (2026-10-04)
+
+**Beatle Quest, game data build 2026-10-04a:** the sheep can now be taken where the game describes it. Updated on every platform.
+
 ## The story so far
 
 It began with **Blake's 7 - The Oric Game**, a graphic adventure built on a custom 6502 engine called OASIS. The plan was a straight port to the NABU PC. The graphics side turned out to be the wall - translating the Oric's display approach to the NABU's video hardware ground progress down long before the game logic itself was ever really tested.
