@@ -4,9 +4,13 @@ Text adventures from the 8-bit era, preserved and ported to real hardware.
 
 This project started as one thing and turned into three. All of it is tied together by the same idea: take a classic game - not a tribute, not a reimagining, the actual original game logic - and get it running properly on hardware it was never built for.
 
-## Latest update (2026-10-04)
+## Latest update (2026-10-13)
 
-**Beatle Quest, game data build 2026-10-04a:** the sheep can now be taken where the game describes it. Updated on every platform.
+**Pyramid 2000, version 1.00.15, on every platform:** a word the game does not know is no longer mistaken for a direction. Typing EXAMINE moved you east, SEARCH moved you south, WAIT moved you west - with nothing on screen to say why, so it read as a room sending you somewhere it should not. An unrecognised word is now refused and tells you so. HELP has been corrected too.
+
+The game data file is unchanged, so an existing `PYRAMID.P2K` and an existing save file both work with the new build.
+
+**Downloads are no longer named after a version.** Every Pyramid 2000 download link now stays valid for later builds as well, and the version lives in one place instead of several: the game prints it when it starts and when you type SCORE. Quote that line if you report something.
 
 ## The story so far
 
@@ -34,7 +38,7 @@ The original target platform, and where all three games were first built and pro
 |--------------|----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
 | Beatle Quest | 📦 Released                           | Get it from [nabu.ca](https://nabu.ca/cpm-software/262) or this repo's [Release](../../releases/tag/bq-nabu-v1.00.22)               |
 | Blake's 7    | 🧪 Engine complete, not feature-complete | Physical NABU PC / CP/M, confirmed hands-on                                                                                              |
-| Pyramid 2000 | 📦 Pre-release RC2                    | Physical NABU PC / CP/M, confirmed hands-on. Get it from this repo's [Release](../../releases/tag/pyramid2000-nabu-v1.00.14-rc2)         |
+| Pyramid 2000 | 📦 Pre-release, version 1.00.15        | Physical NABU PC / CP/M, confirmed hands-on. Get it from this repo's [Release](../../releases/tag/pyramid2000-nabu-v1.00.14-rc2)         |
 
 - *Beatle Quest* - a port of the 1985 Spectrum Quill adventure by Garry Marsh (Number 9 Software), and the game that actually got this whole project started - built first just so it could finally be played on the NABU.
 - *Blake's 7* - a text adaptation of Chema Enguita's 2018 Oric graphic adventure, built directly from the original game's scripts and puzzle chain, all three episodes.
@@ -64,17 +68,17 @@ Every platform above except Commander X16 passes a full, automated, perfect-scor
 
 ### Pyramid 2000 - other platforms
 
-The same `PYRAMID.P2K` game data, running natively on five more machines.
+The same `PYRAMID.P2K` game data, running natively on five more machines. All five are on the same build as the NABU edition, version 1.00.15, and each was played through again for it.
 
 | Platform          | Status              | Emulator tested | Hardware tested | How to run                                                             |
 |--------------------|---------------------|------------------|------------------|--------------------------------------------------------------------------|
-| Commodore 64      | 📦 Pre-release RC2  | ✅ Yes           | ❓ Not yet       | Load `PYRAMID.D64` in VICE or on physical hardware                     |
-| Apple II (ProDOS) | 📦 Pre-release RC2  | ✅ Yes           | ❓ Not yet       | Boot `PYRAMID_APPLE2.po` in AppleWin or on physical hardware           |
-| MSX (MSX-DOS 1)   | 📦 Pre-release RC2  | ✅ Yes           | ❓ Not yet       | Boot `PYRAMID.DSK` in openMSX or on physical hardware                  |
-| Amiga (AmigaOS)   | 📦 Pre-release RC2  | ✅ Yes           | ❓ Not yet       | Run `PYRAMID` (or windowed `PYRAMIDG`) from AmigaDOS in WinUAE or on physical hardware |
-| ZX Spectrum Next  | 📦 Pre-release RC3  | ✅ Yes, and confirmed on MAME by an external tester | ❓ Not yet       | Boot `PYRAMID.nex` in CSpect or on physical hardware                   |
+| Commodore 64      | 📦 Pre-release      | ✅ Yes           | ❓ Not yet       | Load `PYRAMID.D64` in VICE or on physical hardware                     |
+| Apple II (ProDOS) | 📦 Pre-release      | ✅ Yes           | ❓ Not yet       | Boot `PYRAMID_APPLE2.po` in AppleWin or on physical hardware           |
+| MSX (MSX-DOS 1)   | 📦 Pre-release      | ✅ Yes           | ❓ Not yet       | Boot `PYRAMID.DSK` in openMSX or on physical hardware                  |
+| Amiga (AmigaOS)   | 📦 Pre-release      | ✅ Yes           | ❓ Not yet       | Run `PYRAMID` (or windowed `PYRAMIDG`) from AmigaDOS in WinUAE or on physical hardware |
+| ZX Spectrum Next  | 📦 Pre-release      | ✅ Yes, and confirmed on MAME by an external tester | ❓ Not yet       | Boot `PYRAMID.nex` in CSpect or on physical hardware                   |
 
-Commander X16 isn't included yet - it has a known crash-on-exit issue already open on the Beatle Quest X16 build, so a Pyramid 2000 port would likely hit the same problem. TRS-80 Color Computer isn't planned - an original 1982 CoCo release of Pyramid 2000 already exists and is this engine's own architectural reference.
+Commander X16 isn't included - it has a known crash-on-exit issue already open on the Beatle Quest X16 build, so a Pyramid 2000 port would likely hit the same problem, and it is on hold. TRS-80 Color Computer isn't planned - an original 1982 CoCo release of Pyramid 2000 already exists and is this engine's own architectural reference.
 
 ### Pyramid 2000 - Spectrum 48K (special edition)
 
@@ -82,20 +86,25 @@ A one-off, separate from the platforms above: the first program in this whole pr
 
 | Status | Emulator tested | Hardware tested | How to run |
 |---|---|---|---|
-| 📦 Pre-release RC1 (special edition) | ✅ Yes, confirmed on both MAME and Fuse | ❓ Not yet | Load `PYRAMID.tap` in MAME, Fuse, or on physical 48K hardware |
+| 📦 Pre-release, version 1.00.15 (special edition) | ✅ Yes, confirmed on MAME | ❓ Not yet | Load `PYRAMID.tap` in MAME, Fuse, or on physical 48K hardware |
 
 Get it from this repo's [Release](../../releases/tag/pyramid2000-spectrum48-v1.00-rc1). This is a standalone release, not part of the "Multi-Platform Ports" bundle above, and isn't in the regular platform rotation for now.
 
 ## Status key
 
 - 📦 **Released** - publicly available now
-- 📦 **Pre-release RC1/RC2/RC3** - a public build out for external testing; not yet a stable/final release. A higher RC number supersedes a lower one for whichever platform it was built for - each game's platforms ship together in one release, so different platforms can be on different RC numbers at the same time.
+- 📦 **Pre-release** - a public build out for external testing; not yet a stable/final release. For Pyramid 2000, every platform is on one version number, shown above and printed by the game itself, and a download keeps the same filename from one build to the next.
+- 📦 **Pre-release RC1/RC2/RC3** - the older per-platform numbering, still used by Beatle Quest. A higher RC number supersedes a lower one for whichever platform it was built for - each game's platforms ship together in one release, so different platforms can be on different RC numbers at the same time.
 - ✅ **Playable** - hands-on confirmed, start to finish
 - 🧪 **Engine complete, not feature-complete** - runs and plays start to finish, but there's still content/gameplay work left before it's ready to release
 - 🚧 **In progress** - engine work underway, not yet fully playable
 - ⏳ **Planned** - not started yet
 - ❓ **Not yet** - not yet tested on real hardware (works in emulator)
 - ❌ **Known issue** - confirmed failing on real hardware, not yet fixed
+
+## Reporting something
+
+Open a GitHub Issue on the [Issues](../../issues) page. Name the platform, and quote the version line the game prints when it starts - for Pyramid 2000 that is the one thing that identifies which build you were playing, since the download filenames no longer carry a version.
 
 ## Article / further reading
 
