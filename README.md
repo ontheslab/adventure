@@ -10,7 +10,7 @@ This project started as one thing and turned into three. All of it is tied toget
 
 It comes in three screen widths from one package: `B7.COM` at 80 columns, `B740.COM` at 40, which is a stock NABU in its native display mode, and `B736.COM` at 36, which suits a Coleco Adam under T-DOS. All three read the same game data, and a save works with any of them.
 
-The package carries a user manual for the text version along with the original Oric instruction booklet, and a ready-to-run Windows edition is attached as well. Get it from this repo's [Release](../../releases/tag/blakes7-nabu-v1.00.23-rc1).
+The package carries a user manual for the text version along with the original Oric instruction booklet, and a ready-to-run Windows edition is attached as well. Get it from [nabu.ca](https://nabu.ca/cpm-software/273) or this repo's [Release](../../releases/tag/blakes7-nabu-v1.00.23-rc1).
 
 The beta continues separately for the people taking part in it. This release carries no logging of any kind.
 
@@ -49,7 +49,7 @@ The original target platform, and where all three games were first built and pro
 | Game         | Status                                | How to run                                                                                                                          |
 |--------------|----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
 | Beatle Quest | 📦 Released, version 1.00.23          | Get it from [nabu.ca](https://nabu.ca/cpm-software/262) or this repo's [Release](../../releases/tag/bq-nabu-v1.00.23)               |
-| Blake's 7    | 📦 Pre-release RC1, version 1.00.23    | Physical NABU PC / CP/M, confirmed hands-on. Get it from this repo's [Release](../../releases/tag/blakes7-nabu-v1.00.23-rc1)        |
+| Blake's 7    | 📦 Pre-release RC1, version 1.00.23    | Physical NABU PC / CP/M, confirmed hands-on. Get it from [nabu.ca](https://nabu.ca/cpm-software/273) or this repo's [Release](../../releases/tag/blakes7-nabu-v1.00.23-rc1)        |
 | Pyramid 2000 | 📦 Pre-release, version 1.00.15        | Physical NABU PC / CP/M, confirmed hands-on. Get it from this repo's [Release](../../releases/tag/pyramid2000-nabu-v1.00.14-rc2)         |
 
 - *Beatle Quest* - a port of the 1985 Spectrum Quill adventure by Garry Marsh (Number 9 Software), and the game that actually got this whole project started - built first just so it could finally be played on the NABU.
