@@ -4,7 +4,19 @@ Text adventures from the 8-bit era, preserved and ported to real hardware.
 
 This project started as one thing and turned into three. All of it is tied together by the same idea: take a classic game - not a tribute, not a reimagining, the actual original game logic - and get it running properly on hardware it was never built for.
 
-## Latest update (2026-10-13)
+## Latest update (2026-11-12)
+
+**Blake's 7 has its first public release: version 1.00.23, for NABU and CP/M.** Everything before this went out as a closed beta - a limited set of builds sent directly to a small number of testers, never published here. This is the first build anyone can download.
+
+It comes in three screen widths from one package: `B7.COM` at 80 columns, `B740.COM` at 40, which is a stock NABU in its native display mode, and `B736.COM` at 36, which suits a Coleco Adam under T-DOS. All three read the same game data, and a save works with any of them.
+
+The package carries a user manual for the text version along with the original Oric instruction booklet, and a ready-to-run Windows edition is attached as well. Get it from this repo's [Release](../../releases/tag/blakes7-nabu-v1.00.23-rc1).
+
+The beta continues separately for the people taking part in it. This release carries no logging of any kind.
+
+**Beatle Quest is updated to version 1.00.23.** If the data file arrives incomplete - a transfer that stops part way - the game now says so on startup and names the size it is expecting, so the cause is plain from the message. Nothing in the game itself has changed, the data file is the same build this page has served since October, and saved games still work. Get it from [nabu.ca](https://nabu.ca/cpm-software/262) or this repo's [Release](../../releases/tag/bq-nabu-v1.00.23).
+
+## Earlier update (2026-10-13)
 
 **Pyramid 2000, version 1.00.15, on every platform:** a word the game does not know is no longer mistaken for a direction. Typing EXAMINE moved you east, SEARCH moved you south, WAIT moved you west - with nothing on screen to say why, so it read as a room sending you somewhere it should not. An unrecognised word is now refused and tells you so. HELP has been corrected too.
 
@@ -20,7 +32,7 @@ That raised the question: how do you prove out a game's room flow, puzzle chain,
 
 **Beatle Quest**, a Spectrum Quill adventure, became the proving ground. Unlike the Oric game, it's a database-driven format - extractable, replayable, testable. Building a Python runner for it, then a Z80/CP/M engine, turned into the actual breakthrough: a complete, playable NABU port, published in full.
 
-That same approach went back into **Blake's 7** itself - not as a graphics port this time, but as a careful text adaptation built directly from the original Oric scripts, room data, and puzzle chain, with one rule: the Oric game is the authority. All three episodes now run and complete, confirmed on physical NABU hardware.
+That same approach went back into **Blake's 7** itself - not as a graphics port this time, but as a careful text adaptation built directly from the original Oric scripts, room data, and puzzle chain, with one rule: the Oric game is the authority. All three episodes run and complete, confirmed on physical NABU hardware, and after a long closed beta it is now out as a public release.
 
 A third game, **Pyramid 2000** (the 1979 TRS-80 classic), followed the same path and is out as a pre-release too.
 
@@ -36,12 +48,12 @@ The original target platform, and where all three games were first built and pro
 
 | Game         | Status                                | How to run                                                                                                                          |
 |--------------|----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
-| Beatle Quest | 📦 Released                           | Get it from [nabu.ca](https://nabu.ca/cpm-software/262) or this repo's [Release](../../releases/tag/bq-nabu-v1.00.22)               |
-| Blake's 7    | 🧪 Engine complete, not feature-complete | Physical NABU PC / CP/M, confirmed hands-on                                                                                              |
+| Beatle Quest | 📦 Released, version 1.00.23          | Get it from [nabu.ca](https://nabu.ca/cpm-software/262) or this repo's [Release](../../releases/tag/bq-nabu-v1.00.23)               |
+| Blake's 7    | 📦 Pre-release RC1, version 1.00.23    | Physical NABU PC / CP/M, confirmed hands-on. Get it from this repo's [Release](../../releases/tag/blakes7-nabu-v1.00.23-rc1)        |
 | Pyramid 2000 | 📦 Pre-release, version 1.00.15        | Physical NABU PC / CP/M, confirmed hands-on. Get it from this repo's [Release](../../releases/tag/pyramid2000-nabu-v1.00.14-rc2)         |
 
 - *Beatle Quest* - a port of the 1985 Spectrum Quill adventure by Garry Marsh (Number 9 Software), and the game that actually got this whole project started - built first just so it could finally be played on the NABU.
-- *Blake's 7* - a text adaptation of Chema Enguita's 2018 Oric graphic adventure, built directly from the original game's scripts and puzzle chain, all three episodes.
+- *Blake's 7* - a text adaptation of Chema Enguita's 2018 Oric graphic adventure, built directly from the original game's scripts and puzzle chain, all three episodes. One package covers three screen widths: 80 column, 40 column for a stock NABU in its native display mode, and 36 column for a Coleco Adam.
 - *Pyramid 2000* - a port of the 1979 TRS-80 classic (Radio Shack, Cat. No. 26-1905), all 11 treasures collectable for a full 220/220.
 
 ### Tools
@@ -94,7 +106,7 @@ Get it from this repo's [Release](../../releases/tag/pyramid2000-spectrum48-v1.0
 
 - 📦 **Released** - publicly available now
 - 📦 **Pre-release** - a public build out for external testing; not yet a stable/final release. For Pyramid 2000, every platform is on one version number, shown above and printed by the game itself, and a download keeps the same filename from one build to the next.
-- 📦 **Pre-release RC1/RC2/RC3** - the older per-platform numbering, still used by Beatle Quest. A higher RC number supersedes a lower one for whichever platform it was built for - each game's platforms ship together in one release, so different platforms can be on different RC numbers at the same time.
+- 📦 **Pre-release RC1/RC2/RC3** - a release candidate. For Blake's 7 it marks the first public build of version 1.00.23, following a closed beta. For Beatle Quest it is the older per-platform numbering, where a higher RC number supersedes a lower one for whichever platform it was built for - each game's platforms ship together in one release, so different platforms can be on different RC numbers at the same time.
 - ✅ **Playable** - hands-on confirmed, start to finish
 - 🧪 **Engine complete, not feature-complete** - runs and plays start to finish, but there's still content/gameplay work left before it's ready to release
 - 🚧 **In progress** - engine work underway, not yet fully playable
@@ -105,6 +117,8 @@ Get it from this repo's [Release](../../releases/tag/pyramid2000-spectrum48-v1.0
 ## Reporting something
 
 Open a GitHub Issue on the [Issues](../../issues) page. Name the platform, and quote the version line the game prints when it starts - for Pyramid 2000 that is the one thing that identifies which build you were playing, since the download filenames no longer carry a version.
+
+For Blake's 7, type `VERSION` at the game prompt or run `B7 -V`, and quote the three lines it prints - the version, the data build and the engine build. Mentioning your display width helps too, since the game ships at three.
 
 ## Article / further reading
 
