@@ -126,6 +126,13 @@ For Blake's 7, type `VERSION` at the game prompt or run `B7 -V`, and quote the t
 - [Beatle Quest on real hardware](https://www.amigaretro.com/projects/beatle-quest-real-hardware/)
 - [Six Machines, One Game](https://www.amigaretro.com/projects/six-machines-one-game/)
 
+## The original Blake's 7 Oric game
+
+The text adaptation here follows Chema Enguita's 2018 Oric graphic adventure. The original is the game as it was designed to be played, and it is available from both of these.
+
+- [Blake's 7 on Defence Force](https://www.defence-force.org/index.php?page=games&game=blakes7) - the game's own page, with the Oric disk image and its documentation
+- [Blake's 7 (Oric) on itch.io](https://defenceforce.itch.io/blakes-7) - the same game packaged with an emulator, ready to run on Windows
+
 ## Credits
 
 - *Blake's 7* - original Oric game by Chema Enguita (2018)
